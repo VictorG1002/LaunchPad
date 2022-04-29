@@ -1,5 +1,13 @@
-const tocaSomPom = () => {
-  document.querySelector('#som_tecla_pom').play()
+const tocaSom = idSom => {
+  document.querySelector(idSom).play()
 }
 
-document.querySelectorAll('.tecla')
+const listaDeTeclas = document.querySelectorAll('.tecla')
+let contador = 0
+
+while (contador < listaDeTeclas.length) {
+  listaDeTeclas[contador].onclick = function () {
+    tocaSom()
+  }
+  contador = contador + 1
+}
