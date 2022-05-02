@@ -40,7 +40,7 @@ h1 {
   width: 330px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background: var(--cinza);
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
 }
 
